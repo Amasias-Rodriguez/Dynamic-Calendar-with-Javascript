@@ -31,6 +31,7 @@ section{
 #dycalendar table {
     width: 100%;
     border-spacing: 15px;
+    margin-top: 40px;
 }
 
 #dycalendar table tr:nth-child(1) td{
@@ -91,4 +92,32 @@ section{
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
     -5px -5px 10px rgba(255, 255, 255, 1);
+}
+
+.dycalendar-month-container .dycalendar-header,
+.dycalendar-prev-next-btn.next-btn{
+    width: 45px;
+    height: 45px;
+    font-size: 2em;
+    right: 15px;
+    color: #777;
+    background: #edf1f4;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 1);
+}
+
+.dycalendar-month-container .dycalendar-header,
+.dycalendar-prev-next-btn.prev-btn:active,
+.dycalendar-month-container .dycalendar-header,
+.dycalendar-prev-next-btn.next-btn:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px rgba(255, 255, 255, 1);
+}
+
+.dycalendar-span-month-year
+{
+    color: #2196f3;
+    font-size: 2em;
+    font-weight: 400;
 }
